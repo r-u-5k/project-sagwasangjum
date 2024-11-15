@@ -1,0 +1,14 @@
+<%@page import="com.itwill.shop.member.Member"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%
+//로그인여부체크
+String sMemberId = (String) session.getAttribute("sMemberId");
+//Member sMember = (Member) session.getAttribute("sMember");
+if (sMemberId == null) {
+	response.sendRedirect("shop_main.jsp");
+	return;
+}
+%>
+
+

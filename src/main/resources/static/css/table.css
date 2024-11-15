@@ -1,0 +1,83 @@
+#myTable body {
+  padding:1.5em;
+  background: #f5f5f5
+}
+
+#myTable table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#myTable th {
+  text-align: left;
+}
+  
+#myTable thead {
+  font-weight: bold;
+  color: #fff;
+  background: #73685d;
+}
+  
+ #myTable td, #myTable th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ #myTable td {
+  border-bottom: 1px solid #FFFFFF;
+  background: #fff;
+}
+
+a {
+  color: #73685d;
+}
+  
+ @media all and (max-width: 768px) {
+    
+  #myTable table, #myTable thead, #myTable tbody, #myTable th, #myTable td, #myTable tr {
+    display: block;
+  }
+  
+  #myTable th {
+    text-align: right;
+  }
+  
+  #myTable table {
+    position: relative; 
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  #myTable thead {
+    float: left;
+    white-space: nowrap;
+  }
+  
+  #myTable tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  #myTable tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  #myTable th {
+    border-bottom: 1px solid #a39485;
+  }
+  
+  #myTable td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  
+  }

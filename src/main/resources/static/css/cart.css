@@ -1,0 +1,137 @@
+.w3-green, .w3-hover-green:hover {
+	color: #fff !important;
+	background-color: #4CAF50 !important;
+}
+
+.w3-blue {
+	color: #FFF !important;
+	background-color: rgb(0, 128, 255) !important;
+}
+
+.w3-badge {
+	border-radius: 60%;
+}
+
+.w3-badge, .w3-tag {
+	background-color: #000;
+	color: #fff;
+	display: inline-block;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 0.5px;
+	text-align: center;
+	position: relative;
+	left: 15px;
+	font-size: 7pt;
+}
+
+.w3-green-no-login, .w3-hover-green-no-login:hover {
+	color: #fff !important;
+	background-color: #fff !important;
+}
+
+.w3-badge-no-login {
+	border-radius: 60%;
+}
+
+.w3-badge-no-login, .w3-tag-no-login {
+	background-color: #ffffff;
+	color: #fff;
+	display: inline-block;
+	padding-left: 3px;
+	padding-right: 3px;
+	text-align: center;
+	position: relative;
+	left: 5px;
+	font-size: 2pt;
+}
+
+.w3-badge-menu {
+	left: 2px;
+}
+
+.cart-popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 280px;
+	font-size: 25px;
+}
+
+#cart-popup-container {
+	width: 390px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+#cart-img {
+	
+		
+}
+
+
+
+.cart-popup button {
+	background:linear-gradient(to bottom, rgb(255, 255, 255) 5%, #c0c0c0 100%);
+	background-color:#ffffff;
+	border-radius:10px;
+	border:1px solid rgb(0, 0, 0);
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(0,0,0);
+	font-size:18px;
+	padding:0px 10px;
+	text-decoration:none;
+	margin-top:10px;
+}
+
+
+
+
+.m1 {
+	font-size: 15px;
+}
+
+.btn-5 button{
+  background: #000;
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-5:hover {
+  background: transparent;
+  color: #000;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #000;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+

@@ -1,0 +1,181 @@
+@import url("cart.css");
+div#header {
+	all: unset; 
+	background-color: #F3F2ED;
+	width: 100%;
+	text-align: center;
+}
+#menu {
+    text-align: center;
+    width:100%;
+   	
+}
+
+div#header h1 {
+	width:100%;
+	height: 80px;
+	line-height: 80px;
+	margin: 0px 0 0 0;
+	padding-left: 10px;
+	background: #fff ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 10%;
+	display: inline-block;
+}
+div#header #menu {
+	margin-top:10px; 
+	
+}
+
+
+
+#menu ul {
+list-style-type: none;
+    margin: 0;
+    margin-left: 150px;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+#menu ul:after {
+	content: '';
+	display: block;
+	clear: both;
+	
+}
+
+#menu li#logo {
+	float: none;
+}
+
+#menu li{
+	float: right;
+}
+
+
+#menu li#menuList2{
+	 margin: 0 10px;
+	 display: inline-block;
+     float: none;
+}
+
+#menu li#menuList{
+	 margin: 0 10px;
+	 display: inline-block;
+     float: none;
+     transition: width 0.5s, background-color 0.5s, color 0.5s;
+     position: relative;
+     
+}
+#menu li#menuList a {
+   
+   font-size: 18px;
+}
+#menu li#menuList:hover {
+    background-color: #000; /* Hover 상태일 때 배경 색상 */
+}
+
+#menu li#menuList:hover a {
+    color: #fff; /* Hover 상태일 때 폰트 색상 */
+  
+}
+
+#menu li#menuList:hover div {
+    width: 100%;
+    
+}
+
+
+#menu li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 10px 16px 20px 16px;
+	text-decoration: none;
+}
+#menu .active {
+	background-color: #4CAF50;
+}
+
+#menu li#logo {
+	width: 100px; /* 변경된 너비 */
+    height: 100px; /* 변경된 높이 */
+    cursor : pointer;
+   	margin: 0 auto;
+    background: url('../image/icons8-맥-os-32.png');
+    background-position: center; /* 가운데 위치 */
+    background-size: 35%; /* 로고가 전체 너비 높이 중 작은 쪽에 맞추어짐 */
+    background-repeat: no-repeat;
+    opacity: 1;
+	
+}
+
+ #menu li#mainlogo {
+	width: 1300px; /* 변경된 너비 */
+    height: 130px; /* 변경된 높이 */
+    cursor : pointer;
+    margin-right: 160px;
+    background: url('../image/top_banner1.png');
+    background-position: center; /* 가운데 위치 */
+    background-size: 100%; /* 로고가 전체 너비 높이 중 작은 쪽에 맞추어짐 */
+    background-repeat: no-repeat;
+    opacity: 1;
+	
+}
+#menu li#logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#menu li#logo:hover{
+	opacity: 1;
+}
+#menu li#cart {
+	width: 40px;
+	background: url('../image/icons8-쇼핑-카트-64.png');
+	background-position: center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+#menu li#cart:hover{
+	opacity: 1;
+	transform: scale(1.3);
+}
+
+#menu li#cart2 {
+	width: 40px;
+	background: url('../image/icons8-장바구니로드에게-64.png');
+	background-position: center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+#menu li#cart2:hover{
+	opacity: 1;
+	transform: scale(1.3);
+}
+
+ #menu li#mypage {
+	width: 40px;
+	background: url('../image/icons8-성별-중립-사용자-64.png');
+	background-position: center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	opacity: 0.8;
+}
+#menu li#mypage:hover{
+	opacity: 1;
+	transform: scale(1.3);
+}
+
+#menu img#search:hover{
+	cursor: pointer;
+	transform: scale(1.3);
+	
+}
+

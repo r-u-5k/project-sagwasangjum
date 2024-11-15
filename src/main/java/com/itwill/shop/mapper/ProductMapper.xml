@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itwill.shop.mapper.ProductMapper">
+    <select id="selectProductBySearchKeyword" parameterType="map" resultType="com.itwill.shop.product.Product">
+        SELECT * FROM (
+            select rownum idx, sorted_product.* from (
+                select p_no, p_name, p_price, p_image, p_content, p_category_no from product
+                <where>
+                    <if test="p_name != null">
+                        REPLACE(LOWER(p_name), ' ', '') LIKE '%' || REPLACE(LOWER(#{p_name}), ' ', '') || '%'
+                    </if>
+                    <!--  <if test="p_content != null">
+                        REPLACE(LOWER(p_content), ' ', '') LIKE REPLACE(LOWER('%'||#{p_content}||'%'), ' ', '')
+                    </if>
+                    -->
+                </where>
+            ) sorted_product
+        ) rownum_product
+        WHERE idx &gt;= #{start} AND idx &lt;= #{last}
+    </select>
+    
+
+</mapper>
+    <!-- <select id="selectProductAllByCategory" parameterType="map" resultType="com.itwill.shop.product.Product">
+    	select * from (
+    			select rownum idx, sorted_product.* from (
+        			select p_no, p_name, p_price, p_image, p_content, p_category_no from product where p_category_no=#{} ) sorted_product) rownum_product 
+		where idx >= #{} and idx <= #{}
+    
+    </select> -->

@@ -1,0 +1,120 @@
+html, body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+@font-face {
+    font-family: "Apple SD Gothic Neo Bold";
+    src: url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot");
+    src: url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/67680f2eb947c5cbd58b40961b4a61e9.svg#Apple SD Gothic Neo Bold")format("svg");
+	
+}
+
+body {
+	font-family: "Apple SD Gothic Neo Bold";
+	text-align: center;
+	transform : rotate(0.04deg); 
+}
+
+p {
+	margin: 0 10px 10px;
+}
+
+a {
+	padding: 5px;
+	text-decoration: none;
+	color: #000000;
+}
+
+div#header {
+	background-color: #F3F2ED;
+	background: #fff ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 10%;
+}
+div#header h1 {
+	height: 150px;
+	line-height: 80px;
+	margin: 17px 0 0 0;
+	padding-left: 10px;
+}
+/***************** menu start****************/
+/***************** menu end****************/
+div#container {
+	text-align: left
+}
+
+div#content p {
+	line-height: 1.4
+}
+/* 좌측 includde */
+div#navigation {
+	background: rgb(255, 255, 255);
+}
+
+div#navigation {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div#navigation ul {
+	margin: 15px 10px;
+	padding: 0;
+	list-style-type: none;
+}
+
+div#navigation li {
+	margin-bottom: 5px;
+}
+
+div#navigation p {
+	margin-top: 20px;
+	margin-left: 15px;
+}
+/*
+div#extra{background:#CCC8B3;}
+*/
+div#footer {
+	background: rgb(255, 255, 255);
+}
+
+div#footer p {
+	margin: 0;
+	padding: 5px 10px;
+}
+
+div#container {
+	width: 1800px;
+	margin-left: 0 auto;
+
+}
+/*
+div#navigation{float:left;width:150px;height:350px;margin-left:-700px}
+*/
+
+/*
+div#wrapper{float:left;width:100%}
+*/
+div#wrapper {
+	margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+	
+}
+
+div#content {
+	margin: 0 0 0 150px
+}
+
+div#footer {
+	clear: left;
+	width: 100%;
+	
+}
+
